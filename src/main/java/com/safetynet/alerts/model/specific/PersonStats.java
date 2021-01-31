@@ -1,7 +1,8 @@
-package com.safetynet.alerts.model;
+package com.safetynet.alerts.model.specific;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.safetynet.alerts.model.Person;
 
 import java.util.ArrayList;
 import java.util.List;

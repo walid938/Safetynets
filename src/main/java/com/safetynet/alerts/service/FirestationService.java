@@ -2,6 +2,7 @@ package com.safetynet.alerts.service;
 
 
 import com.safetynet.alerts.model.*;
+import com.safetynet.alerts.model.specific.PersonStats;
 import com.safetynet.alerts.utils.JsonDataStructure;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

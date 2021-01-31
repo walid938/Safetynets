@@ -2,8 +2,8 @@ package com.safetynet.alerts.controller;
 
 
 import com.safetynet.alerts.model.Firestation;
+import com.safetynet.alerts.model.specific.PersonStats;
 import com.safetynet.alerts.service.FirestationService;
-import com.safetynet.alerts.model.PersonStats;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
