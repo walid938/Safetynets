@@ -62,7 +62,7 @@ public class FirestationService {
      *
      * @param jsonDataStructure
      * @param p
-     * @return true si la personne est adule >18ans
+     * @return if the person is an adult> 18 years old
      */
     private boolean isPersonAdult(JsonDataStructure jsonDataStructure, Person p) {
         for (Medicalrecord x : jsonDataStructure.getMedicalrecords()) {
