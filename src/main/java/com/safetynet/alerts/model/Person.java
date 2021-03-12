@@ -31,6 +31,14 @@ public Person (String firstName, String lastName, String address, String phone)
 }
 
 
+public Person (String firstName, String lastName, String address, String email, String phone)
+{
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.address = address;
+	this.email = email;
+	this.phone = phone;
+}
 
 public Person() {
 	

@@ -68,6 +68,10 @@ public class PersonInfo {
         this.allergies = allergies;
     }
 
+    public PersonInfo() {
+		// TODO Auto-generated constructor stub
+	}
+    
     public PersonInfo(String firstName, String lastName, String address, int age, String email, List<String> medications, List<String> allergies) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -78,7 +82,8 @@ public class PersonInfo {
         this.allergies = allergies;
     }
 
-    @Override
+
+	@Override
     public String toString() {
         return "PersonInfo{" +
                 "firstName='" + firstName + '\'' +
@@ -90,4 +95,5 @@ public class PersonInfo {
                 ", allergies=" + allergies +
                 '}';
     }
+  
 }

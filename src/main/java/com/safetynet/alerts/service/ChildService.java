@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.safetynet.alerts.model.Medicalrecord;
@@ -18,8 +19,8 @@ import static java.time.temporal.ChronoUnit.YEARS;
 @Service
 public class ChildService {
 	
-	
-	private JsonDataStructureService jsonDataStructureService;
+	 @Autowired
+	private JsonDataStructureService jsonDataStructureService ;
 	
 	/**
 	 * @param address
@@ -32,8 +33,8 @@ public class ChildService {
 		JsonDataStructure jsonDataStructure = jsonDataStructureService.getJsonDataStructure();
 		
 		
-		List<Person> personAdd = new ArrayList();
-		List<Child> childList = new ArrayList();
+		List<Person> personAdd = new ArrayList<Person>();
+		List<Child> childList = new ArrayList<Child>();
 		
 		for(Person p : jsonDataStructure.getPersons() ) {
 			if(p.getAddress().equals(address)) {

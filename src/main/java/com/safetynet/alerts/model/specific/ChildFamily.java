@@ -1,8 +1,6 @@
 package com.safetynet.alerts.model.specific;
 
-
-
-	import java.util.List;
+import java.util.List;
 
 import com.safetynet.alerts.model.Person;
 

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.util.List;
 
 
 @RestController
@@ -21,9 +22,9 @@ public class PersonInfoController {
     PersonInfoService personInfoService;
 
     @GetMapping("/personInfo")
-    public PersonInfo personInfo(@RequestParam("firstName") String firstName, @RequestParam("lastName") String lastName) throws IOException {
+    public List<PersonInfo> personInfo(@RequestParam("firstName") String firstName, @RequestParam("lastName") String lastName) throws IOException {
         logger.info("request PersonInfo which his name is : " + firstName + lastName);
-        PersonInfo personInfo = personInfoService.createPersonInfo(firstName, lastName);
+        List<PersonInfo> personInfo = personInfoService.getpersonInfo(firstName, lastName);
         logger.info("personInfo which his name is: " + firstName + lastName + "is" + personInfo);
         return personInfo;
     }

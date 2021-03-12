@@ -63,7 +63,7 @@ public class StationNumberService {
 
         List<Foyer> foyers = new ArrayList<>();
 
-        //regrouper les firestations ayant les numéro de stations donnés par l'utilisateurs
+     
         for (String id : stations) {
             for (Firestation firestation : jsonDataStructure.getFirestations()) {
                 if (firestation.getStation().equals(id)) {
@@ -72,8 +72,7 @@ public class StationNumberService {
             }
         }
 
-        //dans les firestations choisis par l'utilisateurs, on associe les personnes ayant les mêmes adresses,
-        //à partir de nom/prénom de ces personnes on extrait leur age,medication allergies de medicalRecord
+       
         for (Firestation firestation : StationsUtilisateur) {
             for (Medicalrecord m : jsonDataStructure.getMedicalrecords()) {
                 for (Person person : jsonDataStructure.getPersons()) {
